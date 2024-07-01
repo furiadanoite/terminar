@@ -74,5 +74,12 @@ const simbolos = '!@%*?';
 const botoes = document.querySelectorAll('.parametro-senha__botao');
 const campoSenha = document.querySelector('#campo-senha');
 const checkbox = document.querySelectorAll('.checkbox');
+if (entropia > 57){
+    forcaSenha.classList.add('forte');
+} else if (entropia > 35 && entropia < 57 ) {
+    forcaSenha.classList.add('media');
+} else if (entropia <= 35){
+    forcaSenha.classList.add('fraca');
+}
 
     
